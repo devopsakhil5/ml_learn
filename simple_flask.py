@@ -14,6 +14,9 @@ def courses():
 def syllabus():
     return render_template("syllabus.html")
 
+@app.route('/fees')
+def fees():
+    return "Free for people with high curosity"
 if __name__=="__main__":
     app.run(debug=True)
 
